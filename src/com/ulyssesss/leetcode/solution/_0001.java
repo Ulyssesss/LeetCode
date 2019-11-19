@@ -1,4 +1,4 @@
-package com.ulyssesss.leetcode;
+package com.ulyssesss.leetcode.solution;
 
 import java.util.HashMap;
 import java.util.Map;
