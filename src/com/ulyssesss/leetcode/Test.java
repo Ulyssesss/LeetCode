@@ -1,13 +1,25 @@
 package com.ulyssesss.leetcode;
 
-import com.ulyssesss.leetcode.solution._0015;
+import com.ulyssesss.leetcode.common.ListNode;
+import com.ulyssesss.leetcode.solution._0083;
 
 public class Test {
     public static void main(String[] args) {
-        int[] a = new int[] {0,0,0,0};
-        System.out.println(new _0015().threeSum(a));
+        ListNode l1 = new ListNode(1);
+        ListNode l2 = new ListNode(1);
+        ListNode l3 = new ListNode(1);
+
+        l1.next = l2;
+        l2.next = l3;
+
+        ListNode result = new _0083().deleteDuplicates(l1);
+
+        while (result != null) {
+            System.out.println(result.val);
+            result = result.next;
+        }
 
 
-        System.out.println(15 % 1);
+
     }
 }
