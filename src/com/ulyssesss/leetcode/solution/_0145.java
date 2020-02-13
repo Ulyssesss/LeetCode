@@ -4,6 +4,7 @@ import com.ulyssesss.leetcode.common.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 /**
  * 145. 二叉树的后序遍历
@@ -41,4 +42,27 @@ public class _0145 {
         list.add(root.val);
     }
 
+    public List<Integer> _postorderTraversal(TreeNode root) {
+        List<Integer> list = new ArrayList<>();
+        Stack<TreeNode> stack = new Stack<>();
+        while (true) {
+            while (root != null) {
+                stack.push(root);
+                root = root.left;
+            }
+            if (stack.isEmpty()) {
+                break;
+            }
+            if (stack.peek().right == null) {
+                root = stack.pop();
+                list.add(root.val);
+                while ((!stack.isEmpty()) && root == stack.peek().right) {
+                    root = stack.pop();
+                    list.add(root.val);
+                }
+            }
+            root = stack.isEmpty() ? null : stack.peek().right;
+        }
+        return list;
+    }
 }
