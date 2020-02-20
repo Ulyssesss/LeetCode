@@ -1,4 +1,4 @@
-package com.ulyssesss.leetcode.contest._0176;
+package com.ulyssesss.leetcode.solution;
 
 /**
  * 1351. 统计有序矩阵中的负数
@@ -40,7 +40,7 @@ package com.ulyssesss.leetcode.contest._0176;
  * -100 <= grid[i][j] <= 100
  *
  */
-public class _1_1351 {
+public class _1351 {
 
     public int countNegatives(int[][] grid) {
         int count = 0;

@@ -1,4 +1,4 @@
-package com.ulyssesss.leetcode.contest._0176;
+package com.ulyssesss.leetcode.solution;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,7 +48,7 @@ import java.util.List;
  * 1 <= k <= 40000
  *
  */
-public class _2_1352 {
+public class _1352 {
 
     class ProductOfNumbers {
 
