@@ -1,7 +1,7 @@
 package com.ulyssesss.leetcode.contest._0176;
 
 /**
- * 5340. 统计有序矩阵中的负数
+ * 1351. 统计有序矩阵中的负数
  *
  * 给你一个 m * n 的矩阵 grid，矩阵中的元素无论是按行还是按列，都以非递增顺序排列。 
  *
@@ -40,7 +40,7 @@ package com.ulyssesss.leetcode.contest._0176;
  * -100 <= grid[i][j] <= 100
  *
  */
-public class _1_5340 {
+public class _1_1351 {
 
     public int countNegatives(int[][] grid) {
         int count = 0;

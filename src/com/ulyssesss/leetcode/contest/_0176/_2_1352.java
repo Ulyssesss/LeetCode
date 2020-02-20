@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 5341. 最后 K 个数的乘积
+ * 1352. 最后 K 个数的乘积
  *
  * 请你实现一个「数字乘积类」ProductOfNumbers，要求支持下述两种方法：
  *
@@ -48,7 +48,7 @@ import java.util.List;
  * 1 <= k <= 40000
  *
  */
-public class _2_5341 {
+public class _2_1352 {
 
     class ProductOfNumbers {
 
